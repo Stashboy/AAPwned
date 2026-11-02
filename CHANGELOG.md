@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.23.17 (2026-11-02)
+
+### Fixed
+- **Android Auto's native Home button returns to the Dashboard again.** The `CloseLauncherDashboard`
+  option remaps the native Home/Dashboard button so a tap performs a long-press (opening the all-apps
+  launcher instead of the Coolwalk Dashboard). It defaulted on with no UI toggle, so the split
+  map + media + cards "multitasking" view was unreachable from the Home button once you left it. The
+  default is now **off**, restoring stock Android Auto behavior. The option remains available on the
+  backend for anyone who deliberately wants the old behavior; nothing was removed.
+
+### Changed
+- Version updated to `versionName` `0.23#17.8-r21`, `versionCode` `3036`.
+
 ## 0.23.16 (2026-10-22)
 
 ### Changed
